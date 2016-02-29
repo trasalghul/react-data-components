@@ -33,7 +33,7 @@ var DataTable = React.createClass({
           </div>
           <div className="col-xs-8">
             <Pagination
-              className="pagination pull-right"
+              className={this.props.paginationClassName || "" + " pagination pull-right" }
               currentPage={page.currentPage}
               totalPages={page.totalPages}
               onChangePage={this.onChangePage}
